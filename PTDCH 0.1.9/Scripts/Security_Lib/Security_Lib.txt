@@ -1,0 +1,2 @@
+This folder to log Security script error, if any, script languages file,
+and for possible future loading of regular expressions to the allow and deny arrays from xml or DB file.

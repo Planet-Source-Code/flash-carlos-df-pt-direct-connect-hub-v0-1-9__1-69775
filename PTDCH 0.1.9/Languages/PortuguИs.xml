@@ -1,0 +1,593 @@
+<Language>
+	<DynamicCaptions>
+		<Array(0)>Iniciar o Servidor</Array(0)>
+		<Array(1)>Parar o Servidor</Array(1)>
+	</DynamicCaptions>
+	<Texts>
+	</Texts>
+	<ToolBar>
+		<tlbScript.Buttons.Item(1)>Anular</tlbScript.Buttons.Item(1)>
+		<tlbScript.Buttons.Item(2)>Refazer</tlbScript.Buttons.Item(2)>
+		<tlbScript.Buttons.Item(4)>Localizar..</tlbScript.Buttons.Item(4)>
+		<tlbScript.Buttons.Item(5)>Substituir</tlbScript.Buttons.Item(5)>
+		<tlbScript.Buttons.Item(7)>Ir Para..</tlbScript.Buttons.Item(7)>
+		<tlbScript.Buttons.Item(9)>Guardar Apenas</tlbScript.Buttons.Item(9)>
+		<tlbScript.Buttons.Item(10)>Guardar e Reiniciar</tlbScript.Buttons.Item(10)>
+		<tlbScript.Buttons.Item(12)>Limpar</tlbScript.Buttons.Item(12)>
+		<tlbScript.Buttons.Item(13)>Ajuda</tlbScript.Buttons.Item(13)>
+		<tlbScript.Buttons.Item(14)>Ocultar Scripts</tlbScript.Buttons.Item(14)>
+		<tlbScript.Buttons.Item(16)>Utilizar Tabs</tlbScript.Buttons.Item(16)>
+		<tlbScript.Buttons.Item(18)>Menu</tlbScript.Buttons.Item(18)>
+	</ToolBar>
+	<TabSCaption>	
+		<tbsMenu.Tabs(1)>General</tbsMenu.Tabs(1)>
+		<tbsMenu.Tabs(2)>Segurança</tbsMenu.Tabs(2)>
+		<tbsMenu.Tabs(3)>Interacções</tbsMenu.Tabs(3)>
+		<tbsMenu.Tabs(4)>Avançado</tbsMenu.Tabs(4)>
+		<tbsMenu.Tabs(5)>Redirec..</tbsMenu.Tabs(5)>
+		<tbsMenu.Tabs(6)>Scripts</tbsMenu.Tabs(6)>
+		<tbsMenu.Tabs(7)>Estado</tbsMenu.Tabs(7)>		
+		<tbsMenu.Tabs(8)>Outros</tbsMenu.Tabs(8)>
+		<tbsMenu.Tabs(9)>Ajuda</tbsMenu.Tabs(9)>
+		<tbsSecurity.Tabs(1)>Registos Useres</tbsSecurity.Tabs(1)>
+		<tbsSecurity.Tabs(2)>Nomes Bans</tbsSecurity.Tabs(2)>
+		<tbsSecurity.Tabs(3)>IP Bans</tbsSecurity.Tabs(3)>
+		<tbsSecurity.Tabs(4)>Avançado</tbsSecurity.Tabs(4)>
+		<tbsSecurity.Tabs(5)>Gerente BD</tbsSecurity.Tabs(5)>
+		<tbsInteractions.Tabs(1)>General</tbsInteractions.Tabs(1)>
+		<tbsInteractions.Tabs(2)>Registos/Useres</tbsInteractions.Tabs(2)>
+		<tbsInteractions.Tabs(3)>Comandos</tbsInteractions.Tabs(3)>
+		<tbsInteractions.Tabs(4)>Clientes/Controlo</tbsInteractions.Tabs(4)>
+		<tabAdv.Tabs(1)>Hub/Utilizadores</tabAdv.Tabs(1)>
+		<tabAdv.Tabs(2)>Aplicação</tabAdv.Tabs(2)>
+		<tabAdv.Tabs(3)>Notificações</tabAdv.Tabs(3)>
+		<tabAdv.Tabs(4)>DSN Actuliazão</tabAdv.Tabs(4)>
+		<tabAdv.Tabs(5)>Vários</tabAdv.Tabs(5)>
+		<tbsHelp.Tabs(1)>Sobre PTDCH</tbsHelp.Tabs(1)>
+		<tbsHelp.Tabs(2)>Bloco de Notas</tbsHelp.Tabs(2)>
+		<tbsStatus.Tabs(1)>Main Chat Log</tbsStatus.Tabs(1)>
+		<tbsStatus.Tabs(2)>PM Log</tbsStatus.Tabs(2)>
+		<tbsStatus.Tabs(3)>Protocolo Var. Log</tbsStatus.Tabs(3)>
+		<tbsStatus.Tabs(4)>Sistema Log</tbsStatus.Tabs(4)>
+		<tbsStatus.Tabs(5)>Estado</tbsStatus.Tabs(5)>
+		<tbsInfo.Tabs(1)>Memoria Info</tbsInfo.Tabs(1)>
+		<tbsInfo.Tabs(2)>Plugins Info</tbsInfo.Tabs(2)>
+		<tbsInfo.Tabs(3)>Outros</tbsInfo.Tabs(3)>
+		<tbsDbManager.Tabs(1)>Query String</tbsDbManager.Tabs(1)>
+		<tbsDbManager.Tabs(2)>Conteúdos de dados</tbsDbManager.Tabs(2)>
+	</TabSCaption>	
+	<ListView>	
+	    <lvwCommands.ColumnHeaders(1)>Comando</lvwCommands.ColumnHeaders(1)>
+		<lvwCommands.ColumnHeaders(2)>Mínimo class</lvwCommands.ColumnHeaders(2)>
+		<lvwCommands.ColumnHeaders(3)>Activado</lvwCommands.ColumnHeaders(3)>
+		<lvwUsers.ColumnHeaders(1)>Nome</lvwUsers.ColumnHeaders(1)>
+		<lvwUsers.ColumnHeaders(3)>Winsock Índex</lvwUsers.ColumnHeaders(3)>
+	    <lvwUsers.ColumnHeaders(4)>Conectado Data</lvwUsers.ColumnHeaders(4)>
+		<lvwScripts.ColumnHeaders(1)>Nome</lvwScripts.ColumnHeaders(1)>
+		<lvwScripts.ColumnHeaders(2)>Estado</lvwScripts.ColumnHeaders(2)>
+		<lvwScripts.ColumnHeaders(3)>Script Tipo</lvwScripts.ColumnHeaders(3)>
+		<lvwScripts.ColumnHeaders(4)>Modificado</lvwScripts.ColumnHeaders(4)>
+		<lvwScripts.ColumnHeaders(5)>Run Data</lvwScripts.ColumnHeaders(5)>
+	    <lvwRegistered.ColumnHeaders(1)>Nome</lvwRegistered.ColumnHeaders(1)>
+		<lvwRegistered.ColumnHeaders(2)>Password</lvwRegistered.ColumnHeaders(2)>
+		<lvwRegistered.ColumnHeaders(3)>Classe</lvwRegistered.ColumnHeaders(3)>
+		<lvwRegistered.ColumnHeaders(4)>Classe Nome</lvwRegistered.ColumnHeaders(4)>
+	    <lvwRegistered.ColumnHeaders(5)>Registado Por</lvwRegistered.ColumnHeaders(5)>
+		<lvwRegistered.ColumnHeaders(6)>Registo Data</lvwRegistered.ColumnHeaders(6)>
+		<lvwRegistered.ColumnHeaders(7)>Último Acesso</lvwRegistered.ColumnHeaders(7)>		
+		<lvwRegistered.ColumnHeaders(8)>Último IP</lvwRegistered.ColumnHeaders(8)>
+	    <lvwBans.ColumnHeaders(1)>Nome</lvwBans.ColumnHeaders(1)>
+		<lvwBans.ColumnHeaders(2)>Perm</lvwBans.ColumnHeaders(2)>
+		<lvwBans.ColumnHeaders(3)>Banido Por</lvwBans.ColumnHeaders(3)>
+		<lvwBans.ColumnHeaders(4)>Referencia Data</lvwBans.ColumnHeaders(4)>
+	    <lvwPlugins.ColumnHeaders(2)>Nome</lvwPlugins.ColumnHeaders(2)>
+		<lvwPlugins.ColumnHeaders(3)>Versão</lvwPlugins.ColumnHeaders(3)>
+		<lvwPlugins.ColumnHeaders(4)>Autor</lvwPlugins.ColumnHeaders(4)>
+		<lvwPlugins.ColumnHeaders(5)>Descrição</lvwPlugins.ColumnHeaders(5)>
+		<lvwPlugins.ColumnHeaders(6)>Realizado</lvwPlugins.ColumnHeaders(6)>
+		<lvwPlugins.ColumnHeaders(7)>Comentário</lvwPlugins.ColumnHeaders(7)>
+	</ListView>
+	<Captions>
+	    <lblPriority(0)>Baixo</lblPriority(0)>
+		<lblPriority(1)>Normal</lblPriority(1)>
+		<lblPriority(2)>Alto</lblPriority(2)>
+		<lblPriority(3)>Tempo Real</lblPriority(3)>
+		<lblPriority(4)>Nota: Alto e Tempo Real não é recomendado.</lblPriority(4)>
+		<mnuPermIPBan(0)>Adicionar</mnuPermIPBan(0)>
+		<mnuPermIPBan(1)>Remover</mnuPermIPBan(1)>
+		<mnuPermIPBan(2)>Limpar</mnuPermIPBan(2)>
+		<mnuPermIPBan(4)>Refrescar a list</mnuPermIPBan(4)>
+		<mnuPermIPBan(5)>Limpar a list</mnuPermIPBan(5)>
+		<mnuPopup(0)>Tray Menu</mnuPopup(0)>
+		<mnuPopup(1)>Registered user list</mnuPopup(1)>
+		<mnuPopup(2)>Temp IP ban list</mnuPopup(2)>
+		<mnuPopup(3)>Perm IP ban list</mnuPopup(3)>
+		<mnuPopup(4)>Bulquiar nomes</mnuPopup(4)>
+		<mnuPopup(5)>Tags</mnuPopup(5)>
+		<mnuPopup(6)>Estado</mnuPopup(6)>
+		<mnuPopup(7)>Utilizadores</mnuPopup(7)>
+		<mnuPopup(8)>Plan</mnuPopup(8)>
+		<mnuPlan(0)>Aicionar</mnuPlan(0)>
+		<mnuPlan(1)>Remover</mnuPlan(1)>
+		<mnuCodeRTB(0)>Ver Espaços em Branco</mnuCodeRTB(0)>
+		<mnuCodeRTB(1)>Linha de Numeração</mnuCodeRTB(1)>
+		<mnuCodeRTB(3)>Vários</mnuCodeRTB(3)>
+		<mnuCodeRTB(5)>Ajuda</mnuCodeRTB(5)>
+		<mnuCodeRTB(7)>Muldar</mnuCodeRTB(7)>
+		<mnuCodeRTB(8)>Bulquiar</mnuCodeRTB(8)>
+		<mnuCodeRTB(10)>Plug-ins</mnuCodeRTB(10)>
+		<mnuCodeRTB1(0)>Inserir Data/Hora</mnuCodeRTB1(0)>
+		<mnuCodeRTB1(1)>Script Info..</mnuCodeRTB1(1)>
+		<mnuCodeRTB1(2)>Scripts Ajuda</mnuCodeRTB1(2)>
+		<mnuCodeRTB1(4)>Guardar Script como..</mnuCodeRTB1(4)>
+		<mnuCodeRTB1(6)>Limpar Undo Buffer</mnuCodeRTB1(6)>
+		<mnuRegistered(0)>Copiar Nome</mnuRegistered(0)>
+		<mnuRegistered(1)>Copiar Password</mnuRegistered(1)>
+		<mnuRegistered(2)>Copiar Último IP</mnuRegistered(2)>
+		<mnuRegistered(4)>Copiar Tudo</mnuRegistered(4)>
+		<mnuLocked(0)>Copiar Nome</mnuLocked(0)>
+		<mnuLocked(2)>Copiar Tudo</mnuLocked(2)>
+		<mnuStatus(0)>Copiar</mnuStatus(0)>
+		<mnuStatus(1)>Limpar</mnuStatus(1)>
+		<mnuTags(0)>Adicionar</mnuTags(0)>
+		<mnuTags(1)>Remover</mnuTags(1)>
+		<mnuTempIPBan(0)>Adicionar</mnuTempIPBan(0)>
+		<mnuTempIPBan(1)>Remover</mnuTempIPBan(1)>
+		<mnuTempIPBan(2)>Limpar</mnuTempIPBan(2)>
+		<mnuTempIPBan(4)>Refrescar lista</mnuTempIPBan(4)>
+		<mnuTempIPBan(5)>Limpar list</mnuTempIPBan(5)>
+		<mnuTray(0)>Mostrar</mnuTray(0)>
+		<mnuTray(1)>Ocultar</mnuTray(1)>
+		<mnuUsers(0)>Enviar (data) (selecionados)</mnuUsers(0)>
+		<mnuUsers(1)>Enviar (data) (a todos)</mnuUsers(1)>
+		<mnuUsers(2)>Desligar</mnuUsers(2)>
+		<mnuUsers(3)>Expulsar (Kick)</mnuUsers(3)>
+		<mnuUsers(4)>Redireccionar</mnuUsers(4)>
+		<mnuUsers(5)>Expulsar (Ban)</mnuUsers(5)>
+		<mnuUsers(6)>Selenciar [(De)mute]</mnuUsers(6)>
+		<mnuUsers(7)>Propriedades (seleccionado)</mnuUsers(7)>
+		<mnuScripts(0)>Reset / Save</mnuScripts(0)>
+		<mnuScripts(2)>Parar</mnuScripts(2)>
+		<mnuScripts(3)>Parar Tudo</mnuScripts(3)>
+		<mnuScripts(5)>Reiniciar (Checkeds)</mnuScripts(5)>
+		<mnuScripts(6)>Reiniciar Dir</mnuScripts(6)>
+		<mnuScripts(8)>Propriedades</mnuScripts(8)>
+		<mnuScriptHelp>Copiar</mnuScriptHelp>
+		<lblCheck(0)>Registar o hub nas listas públicas</lblCheck(0)>
+		<lblCheck(1)>Iniciar em modo de password</lblCheck(1)>
+		<lblCheck(2)>Não permitir clientes com tag desconhecidas</lblCheck(2)>
+		<lblCheck(3)>Enviar a todos os Utilizadores, inclusive Utilizadores com o mínimo de class</lblCheck(3)>
+		<lblCheck(4)>Preload winsocks ao iniciar o servidor</lblCheck(4)>
+		<lblCheck(5)>Iniciar o PTDCH juntamente com o Windows</lblCheck(5)>
+		<lblCheck(6)>Confirmar sair</lblCheck(6)>
+		<lblCheck(7)>Enviar mensagens de conversa principais (Main Chat) a Utilizadores em  modo “away”</lblCheck(7)>
+		<lblCheck(8)>Excluir (kick) automaticamente clientes MLDonkey</lblCheck(8)>
+		<lblCheck(9)>Iniciar o servidor automaticamente ao iniciar a aplicação.</lblCheck(9)>
+		<lblCheck(10)>Permitir só Utilizadores registrados</lblCheck(10)>
+		<lblCheck(11)>Verificar as tags dos clientes (evitar Utilizadores fakers)</lblCheck(11)>
+		<lblCheck(12)>Incluir os hub onde o utilizador é Operador.</lblCheck(12)>
+		<lblCheck(13)>Regras tambem para Ops/VIPs (share e slot)</lblCheck(13)>
+		<lblCheck(14)>Compactar a base de dados a terminar a aplicação</lblCheck(14)>
+		<lblCheck(15)>Impedir (certas) ferramentas de pesquisa</lblCheck(15)>
+		<lblCheck(16)>Utilizar o método anti share fake</lblCheck(16)>
+		<lblCheck(17)>Utilizar mensagens discriminativas ao Ban/kick</lblCheck(17)>
+		<lblCheck(18)>Nome do Op Chat</lblCheck(18)>
+		<lblCheck(19)>Usar sistema de mentoring</lblCheck(19)>
+		<lblCheck(20)>Activar anti flood</lblCheck(20)>
+		<lblCheck(21)>Nome do Bot</lblCheck(21)>
+		<lblCheck(22)>Para Min Share</lblCheck(22)>
+		<lblCheck(23)>Prefixo de comando embutido (para filtrar nas conversas (Main Chat))</lblCheck(23)>
+		<lblCheck(24)>Evitar brutal force (contra a password) ao entrar no hub</lblCheck(24)>
+		<lblCheck(25)>Excluir ligações Socks5</lblCheck(25)>
+		<lblCheck(26)>Iniciar minimizado na bandeja do sistema</lblCheck(26)>
+		<lblCheck(27)>Enviar mensagens em privado (PM) (caso contrário, envia mensagens para o Main Chat)</lblCheck(27)>
+		<lblCheck(28)>Verificar se existe novas versões (update) ao iniciar a aplicação</lblCheck(28)>
+		<lblCheck(29)>Activar</lblCheck(29)>
+		<lblCheck(30)>Redireccionar também os operadores (administradores não são afectados)</lblCheck(30)>
+		<lblCheck(31)>Redireccionar Utilizadores com password incorrecta</lblCheck(31)>
+		<lblCheck(32)>Correr o servidor só em mode password (só chat)</lblCheck(32)>
+		<lblCheck(33)>Permitir VIPs utilizarem Op Chat</lblCheck(33)>
+		<lblCheck(34)>Enviar a qualquer utilizador, inclusive Utilizadores debaixo de classe mínima</lblCheck(34)>
+		<lblCheck(35)>Minimizar para a bandeja do sistema</lblCheck(35)>
+		<lblCheck(36)>Mostrar (MyINFOs) apenas para OPs</lblCheck(36)>
+		<lblCheck(37)>Para Max Share</lblCheck(37)>
+		<lblCheck(38)>Para Max Slots</lblCheck(38)>
+		<lblCheck(39)>Para Min Slots</lblCheck(39)>
+		<lblCheck(40)>Para outros NMDC</lblCheck(40)>
+		<lblCheck(41)>Para Max Hubs</lblCheck(41)>
+		<lblCheck(42)>Para sem Tag</lblCheck(42)>
+		<lblCheck(43)>Por Slot / Hub</lblCheck(43)>
+		<lblCheck(44)>Para outros DC++</lblCheck(44)>
+		<lblCheck(45)>Por KB / Slot</lblCheck(45)>
+		<lblCheck(46)>Por Fake Tag</lblCheck(46)>
+		<lblCheck(47)>Por Fake Share</lblCheck(47)>
+		<lblCheck(48)>Não permitir ligações em modo passivo</lblCheck(48)>
+		<lblCheck(49)>Modo Passivo</lblCheck(49)>
+		<lblCheck(52)>Actualizar DynDNS / No-IP serviços</lblCheck(52)>
+		<lblCheck(53)>Scheduler</lblCheck(53)>
+		<lblCheck(54)>Activar a janela magnética</lblCheck(54)>
+		<lblCheck(55)>Popup quando um utilizador novo for registado</lblCheck(55)>
+		<lblCheck(56)>Popup quando um Op se ligar ao hub</lblCheck(56)>
+		<lblCheck(57)>Popup quando um operador se desligar ao hub</lblCheck(57)>
+		<lblCheck(58)>Popup quando um utilizador for expulso (kick) do hub </lblCheck(58)>
+		<lblCheck(59)>Popup quando um utilizador for expulso (Ban) do hub </lblCheck(59)>
+		<lblCheck(60)>Popup quando um utilizador for redireccionado </lblCheck(60)>
+		<lblCheck(62)>Popup ao iniciar o servidor</lblCheck(62)>
+		<lblCheck(63)>Popup ao parar o servidor</lblCheck(63)>
+		<lblCheck(64)>Mover a aplicação ao clicar em qualquer parte</lblCheck(64)>
+		<lblCheck(65)>Permitir uso</lblCheck(65)>
+		<lblCheck(66)>Activar Mascara</lblCheck(66)>
+		<lblCheck(67)>Aplicar tema aleatoriamente ao iniciar</lblCheck(67)>
+		<lblCheck(68)>Activado Plugins</lblCheck(68)>
+		<lblCheck(69)>Activado Dyn DNS Update(s)</lblCheck(69)>
+		<lblCheck(70)>Actualizar No-IP DNS ao iniciar PTDCH</lblCheck(70)>
+		<lblCheck(71)>Activado No-IP DNS Update(s)</lblCheck(71)>
+		<Labels(0)>Total:</Labels(0)>
+		<Labels(1)>Dispon.:</Labels(1)>
+		<Labels(2)>Total:</Labels(2)>
+		<Labels(3)>Dispon:</Labels(3)>
+		<Labels(6)>Base de Dados (*.XML) de YnHub ou PtokaX.</Labels(6)>
+		<Labels(7)>Total:</Labels(7)>
+		<Labels(8)>Dispon:</Labels(8)>
+		<Labels(9)>Form</Labels(9)>
+		<lblTitle(0)>Hub Configuração</lblTitle(0)>
+		<lblTitle(1)>Bem-vindo ao mundo de</lblTitle(1)>
+		<lblTitle(2)>Tempo Ligado</lblTitle(2)>
+		<lblTitle(3)>Hub Controle</lblTitle(3)>
+		<lblTitle(4)>Interface</lblTitle(4)>
+		<lblTitle(5)>Settings</lblTitle(5)>
+		<lblTitle(6)>Actualizar</lblTitle(6)>
+		<lblTitle(7)>Mensagens em Massa</lblTitle(7)>
+		<lblTitle(8)>Converter registos para PTDCH database</lblTitle(8)>
+		<lblTitle(9)>Memória Física (K)</lblTitle(9)>
+		<lblTitle(10)>Memória Virtual (K)</lblTitle(10)>
+		<lblTitle(11)>Uso arquivo pág.(K)</lblTitle(11)>
+		<lblTitle(12)>Processador</lblTitle(12)>
+		<lblTitle(13)>Memória Utilizada: ---</lblTitle(13)>
+		<lblTitle(14)>Popup Teste</lblTitle(14)>
+		<lblTitle(18)>Prioridade do processo</lblTitle(18)>
+		<lblTitle(19)>Tema</lblTitle(19)>
+		<cmdButton(0)>Verificar Actualizações</cmdButton(0)>
+		<cmdButton(2)>Redireccionar Utilizadores</cmdButton(2)>
+		<cmdButton(3)>Guardar Configurações</cmdButton(3)>
+		<cmdButton(4)>Reiniciar Configurações</cmdButton(4)>
+		<cmdButton(5)>Detectar IP</cmdButton(5)>
+		<cmdButton(6)>Forçar  UpDate</cmdButton(6)>
+		<cmdButton(7)>Todos</cmdButton(7)>
+		<cmdButton(8)>Operadores</cmdButton(8)>
+		<cmdButton(9)>Não Registados</cmdButton(9)>
+		<cmdConvDatabase>Converter Base-Dados</cmdConvDatabase>
+		<cmdDB(0)>Actualizar</cmdDB(0)>
+		<cmdDB(1)>Actualizar</cmdDB(1)>
+		<cmdDB(2)>Adicionar</cmdDB(2)>
+		<cmdDB(3)>Adicionar</cmdDB(3)>
+		<cmdDB(4)>Remover</cmdDB(4)>
+		<cmdDB(5)>Remover</cmdDB(5)>
+		<cmdDB(6)>Editar</cmdDB(6)>
+		<cmdDB(7)>Editar</cmdDB(7)>
+		<cmdDB(8)>Renomear</cmdDB(8)>
+		<cmdStSend>Enviar</cmdStSend>
+		<cmdPlugins>Configurar</cmdPlugins>
+		<cmdPopup(0)>Info</cmdPopup(0)>
+		<cmdPopup(1)>Aviso</cmdPopup(1)>
+		<cmdPopup(2)>Erro</cmdPopup(2)>
+		<cmdPopup(3)>App</cmdPopup(3)>
+		<cmdPopup(4)>Nenhum</cmdPopup(4)>
+		<lblHolder(0)>Nome</lblHolder(0)>
+		<lblHolder(1)>Descrição</lblHolder(1)>
+		<lblHolder(2)>Endereço</lblHolder(2)>
+		<lblHolder(3)>Ler Portas</lblHolder(3)>
+		<lblHolder(4)>Registar Endereço</lblHolder(4)>
+		<lblHolder(5)>Estatísticas</lblHolder(5)>
+		<lblHolder(6)>Max. Utilizadores</lblHolder(6)>
+		<lblHolder(7)>Mensagem de boas-vindas (MOTD)</lblHolder(7)>
+		<lblHolder(8)>Mínimo de class (estatuto) para pesquisas</lblHolder(8)>
+		<lblHolder(9)>Max. mensagem do tamanho de protocolo.</lblHolder(9)>
+		<lblHolder(10)>Manipulação especial na qual é construída</lblHolder(10)>
+		<lblHolder(11)>Mínimo NMDC versão</lblHolder(11)>
+		<lblHolder(12)>Mínimo DC++ versão</lblHolder(12)>
+		<lblHolder(13)>Permanentes IP Bans</lblHolder(13)>
+		<lblHolder(14)>Temporários IP Bans</lblHolder(14)>
+		<lblHolder(15)>Tempo de expulsão (Kick/Ban em minutos)</lblHolder(15)>
+		<lblHolder(16)>Requer</lblHolder(16)>
+		<lblHolder(17)>Slot/Hub</lblHolder(17)>
+		<lblHolder(18)>MOTD</lblHolder(18)>
+		<lblHolder(19)>Máximo Hubs</lblHolder(19)>
+		<lblHolder(20)>Grant</lblHolder(20)>
+		<lblHolder(21)>Extra slot(s) se abertura automatizada</lblHolder(21)>
+		<lblHolder(22)>quando velocidade de upload &lt;</lblHolder(22)>
+		<lblHolder(23)>KB/s</lblHolder(23)>
+		<lblHolder(24)>Opções de Redireccionamento</lblHolder(24)>
+		<lblHolder(25)>Share mínimo</lblHolder(25)>
+		<lblHolder(26)>Mensagem ou Dados</lblHolder(26)>
+		<lblHolder(27)>Opções de Tag</lblHolder(27)>
+		<lblHolder(28)>Mínimo Slots</lblHolder(28)>
+		<lblHolder(29)>Nome</lblHolder(29)>
+		<lblHolder(31)>Intervalo mínimo de pesquisas para ligações em modo passivo</lblHolder(31)>
+		<lblHolder(32)>Tags de cliente aceites</lblHolder(32)>
+		<lblHolder(33)>Tags clientes p/defeito</lblHolder(33)>
+		<lblHolder(37)>Palavra Passe</lblHolder(37)>
+		<lblHolder(40)>Share máximo</lblHolder(40)>
+		<lblHolder(43)>Nome</lblHolder(43)>
+		<lblHolder(44)>KB/s por slot (Limitador de upload)</lblHolder(44)>
+		<lblHolder(45)>Utilizadores ligados :</lblHolder(45)>
+		<lblHolder(46)>Palavra Passe</lblHolder(46)>
+		<lblHolder(47)>Operators ligados:</lblHolder(47)>
+		<lblHolder(48)>Seperador</lblHolder(48)>
+		<lblHolder(49)>Razão: </lblHolder(49)>
+		<lblHolder(51)>Total shared: </lblHolder(51)>
+		<lblHolder(52)>Recorde Utilizadores: </lblHolder(52)>
+		<lblHolder(53)>Recorde Operadoes: </lblHolder(53)>
+		<lblHolder(54)>Recorde shared: </lblHolder(54)>
+		<lblHolder(60)>0 Bytes</lblHolder(60)>
+		<lblHolder(61)>Opções de Flood</lblHolder(61)>
+		<lblHolder(62)>Flooding intervalo</lblHolder(62)>
+		<lblHolder(63)>ms</lblHolder(63)>
+		<lblHolder(64)>MyINFO</lblHolder(64)>
+		<lblHolder(65)>Lista / Nomes</lblHolder(65)>
+		<lblHolder(66)>Pesquisas/Activos</lblHolder(66)>
+		<lblHolder(67)>Pesquisas/Passivos</lblHolder(67)>
+		<lblHolder(68)>Ban utilizador com flooding para</lblHolder(68)>
+		<lblHolder(69)>minutos</lblHolder(69)>
+		<lblHolder(76)>Número de (sendings) permitido durante intervalo </lblHolder(76)>
+		<lblHolder(77)>Palava Passe</lblHolder(77)>
+		<lblHolder(78)>Global Palava Passe modo</lblHolder(78)>
+		<lblHolder(80)>Permitir</lblHolder(80)>
+		<lblHolder(81)>Atentados</lblHolder(81)>
+		<lblHolder(82)>Permitir VIPs usar Op Chat</lblHolder(82)>
+		<lblHolder(83)>IP Ban Filtro</lblHolder(83)>
+		<lblHolder(85)>Mínimo de class para por efectuar downloads</lblHolder(85)>
+		<lblHolder(88)>Comprimento máximo de mensagem de conversa</lblHolder(88)>
+		<lblHolder(89)>Máximo Slots</lblHolder(89)>
+		<lblHolder(92)>Nunca reinicie PTDH mais de uma vez depois de um pedido de actualização! Um hostname de DNS Dinâmico só precisa ser actualizado quando seu endereço de IP muda. Qualquer frequentemente actualiza mais do que isto - do mesmo endereço de IP - será considerado abusivo pelo sistema de actualização e pode resultar em seu hostname sido bloqueado. Entra em vigor de actualizar seu IP durará até 10 minutos.</lblHolder(92)>
+		<lblHolder(99)>Redireccionar endereço</lblHolder(99)>
+		<lblOptJM(0)>Não enviar</lblOptJM(0)>
+		<lblOptJM(1)>Enviar Msg privada (PM)</lblOptJM(1)>
+		<lblOptJM(2)>Enviar Msg (Main Chat)</lblOptJM(2)>
+		<lblOptBanFilter(0)>Não filtrar</lblOptBanFilter(0)>
+		<lblOptBanFilter(1)>Fim em</lblOptBanFilter(1)>
+		<lblOptBanFilter(2)>Contenha</lblOptBanFilter(2)>
+		<lblOptBanFilter(3)>Comece com</lblOptBanFilter(3)>
+		<lblOptRedirect(0)>Todos os Utilizadores</lblOptRedirect(0)>
+		<lblOptRedirect(1)>Utilizadores não registados</lblOptRedirect(1)>
+		<lblOptRedirect(2)>Só se cheio</lblOptRedirect(2)>
+		<lblOptRedirect(3)>Só se cheio e o utilizador não é registrado</lblOptRedirect(3)>
+		<lblOptRedirect(4)>Só se cheio e o utilizador não é Op</lblOptRedirect(4)>
+		<lblOptRedirect(5)>Não redireccionar</lblOptRedirect(5)>
+		<lblOptStSend(0)>Chat</lblOptStSend(0)>
+		<lblOptStSend(1)>Dados</lblOptStSend(1)>
+	</Captions>
+	<ToolTips>
+		<lblCheck(0)>Regista o hub nos servidores selecionados</lblCheck(0)>
+		<lblCheck(1)>Exija todos os Utilizadores não registrados que enviem a Palavra Passe especificada abaixo antes de entrar</lblCheck(1)>
+		<lblCheck(2)>Desconectar todos os utilizadores sem TAG &lt;++ (ou sem TAG) tag</lblCheck(2)>
+		<lblCheck(3)>Active para permitir os Utilizadores acima / igual ao min.. classifique para procurar os Utilizadores debaixo da classe de min..</lblCheck(3)>
+		<lblCheck(4)>Negue conexões de sufficent (tipicamente) de preload que assumem seu Hub inteiro estando cheio (mais rapidamente, mas usa mais memória)</lblCheck(4)>
+		<lblCheck(5)>Iniciar PTDCH juntamente com o windows</lblCheck(5)>
+		<lblCheck(6)>Pedir confirmação ao encerrar o hub antes de desligar a aplicação</lblCheck(6)>
+		<lblCheck(7)>Todos (NMDC) os Utilizadores que estão em fora modo away vão receber mensagens no Main Chat</lblCheck(7)>
+		<lblCheck(8)>Expulsar (kick) automaticamente clientes MLDonkey (recomendado)</lblCheck(8)>
+		<lblCheck(9)>Inicia automaticamente o servidor quando o PTDCH for executado</lblCheck(9)>
+		<lblCheck(10)>Só Utilizadores registrados podem conectar-se ao hub</lblCheck(10)>
+		<lblCheck(11)>Expulsar clientes com tags com anomalias? (como H: ou S: erradamente ordenadas, etc)</lblCheck(11)>
+		<lblCheck(12)>Em DC++ &gt; 0.24 (entre), incluir na contagem dos hub mesmo que sejam Op?</lblCheck(12)>
+		<lblCheck(13)>Active regras Ops/VIPs, share e slot</lblCheck(13)>
+		<lblCheck(14)>Comprimirá a base de dados a um tamanho menor ao saír</lblCheck(14)>
+		<lblCheck(15)>Impede ferramentas de procura como MoGLO e DCSearch de procurar (não conectando)</lblCheck(15)>
+		<lblCheck(16)>Active para padrões (faking) tradicionais (só ou sem experiência normalmente é pegado com isto)</lblCheck(16)>
+		<lblCheck(17)>ex. &quot;Seu IP é proibido (banid).&quot; contra &quot;Seu IP é proibido (banid)!&quot;</lblCheck(17)>
+		<lblCheck(18)>Active para ter a conversa de “Op Chat” listado na lista de utilizador (então habilitado)</lblCheck(18)>
+		<lblCheck(19)>Veja Mentoring.txt para detalhes - min superior share sistema</lblCheck(19)>
+		<lblCheck(20)>Ajudas prevenindo (flooding) por meios tradicionais (ex: MyINFO, nicklist, pesquisa, etc)</lblCheck(20)>
+		<lblCheck(21)>Active para ter o bot listado na lista de Utilizadores</lblCheck(21)>
+		<lblCheck(23)>Filtra mensagens que começam com o caráter de prefixo da conversa principal (Main Chat)</lblCheck(23)>
+		<lblCheck(24)>Limita o número de tempos que você pode tentar anotar dentro antes de ser expulso (ban) temporariamente</lblCheck(24)>
+		<lblCheck(25)>Excluir ligações socks5 (Devem ser Tags validas)</lblCheck(25)>
+		<lblCheck(26)>Quando o hub é iniciado, permanecerá escondido na bandeja de sistema</lblCheck(26)>
+		<lblCheck(27)>Active para enviar razões por fracassar várias regras por um (PM) (do nome de bot por defeito)</lblCheck(27)>
+		<lblCheck(28)>Procurará por uma versão nova de PTDCH ao iniciar a aplicação</lblCheck(28)>
+		<lblCheck(29)>Active para habilitar comandos</lblCheck(29)>
+		<lblCheck(30)>Active para permitir os operadores para usar o redireccionamento habilitado (admins sempre podem redirecionar)</lblCheck(30)>
+		<lblCheck(31)>Redirecciona Utilizadores que não saibam a password  defenido nas opções em “Geral”</lblCheck(31)>
+		<lblCheck(32)>Incapacita pesquisa / ligação de todos os Utilizadores; as conversas em mensagens privadas “PM” e principais “Main Chat” são permitidas</lblCheck(32)>
+		<lblCheck(33)>Active para permitir os VIPs usarem o (Op Chat)</lblCheck(33)>
+		<lblCheck(34)>Tira toda a MyINFO antes de enviar a Utilizadores não registrados</lblCheck(34)>
+		<lblCheck(35)>Active para ter o PTDCH na bandeja de sistema aominimizar</lblCheck(35)>
+		<lblCheck(48)>Excluiu conexão de cliente em Modo Passivo (Em case de não estar correcto na Tag)</lblCheck(48)>
+		<lblCheck(53)>Active para habilitar  scheduler</lblCheck(53)>
+		<lblCheck(68)>Esta opção requer o reinício da aplicação para que funcione..</lblCheck(68)>
+		<cmbInterface>Defina o idioma de interface para o PTDCH</cmbInterface>
+		<lblHolder(9)>Limite mensagens e comprimento de comandos de protocolo. Tenha cuidado para não fixar muito baixo. Por defeito é 2048</lblHolder(9)>
+		<lblHolder(26)>Número de máximo de Utilizadores que podem conectar-se ao seu hub (1 a 32767)</lblHolder(26)>
+		<lblHolder(30)>0 = Check desactivado / -1 = Passive pesquisas desactivado / Else = Min comprimento de pesquisas</lblHolder(30)>
+		<lblHolder(46)>0 = IP não Ban / -1 = Perm IP Ban / Else = Temp IP Ban</lblHolder(46)>
+		<lblHolder(82)>Active para permitir os VIPs usarem o (Op Chat)</lblHolder(82)>
+		<lblHolder(84)>0 = Min class desactivada</lblHolder(84)>
+		<lblHolder(86)>0 = Min class desactivada</lblHolder(86)>
+		<lblHolder(87)>Comprimento máximo (em caracteres) de uma mensagem para o (Main Chat)</lblHolder(87)>
+		<lvwCommands>Duplo click para editar</lvwCommands>
+		<lvwReasons>Duplo click para editar</lvwReasons>
+		<lvwPermIPBan>Click butão esquerdo para acesso ao menu</lvwPermIPBan>
+		<lvwTempIPBan>Click butão esquerdo para acesso ao menu</lvwTempIPBan>
+		<lblOptJM(0)>Não envia mensagem ao entrar</lblOptJM(0)>
+		<lblOptJM(1)>Envia em uma janela de mensagem privada (PM)(com o nome do bot)</lblOptJM(1)>
+		<lblOptJM(2)>Envia no (Main Chat) &apos; (com o nome do bot)</lblOptJM(2)>
+		<lblOptRedirect(0)>Redireciona todos os Utilizadores para seu endereço</lblOptRedirect(0)>
+		<lblOptRedirect(1)>São redirecionados só Utilizadores não registados</lblOptRedirect(1)>
+		<lblOptRedirect(2)>São redirecionados se o hub estiver cheio</lblOptRedirect(2)>
+		<lblOptRedirect(3)>Só redireciona se o utilizador não for registado e o hub estiver cheio</lblOptRedirect(3)>
+		<lblOptRedirect(4)>Só redireciona se o utilizador for um operador (ou de uma classe mais alta) e o hub estiver cheio</lblOptRedirect(4)>
+		<lblOptRedirect(5)>Não redireciona ninguém (desconecta se o hub estiver cheio)</lblOptRedirect(5)>
+		<txtData(0)>Nome de seu hub (max 70 caracteres)</txtData(0)>
+		<txtData(1)>Uma descrição curta de seu hub (max 140 caracteres)</txtData(1)>
+		<txtData(2)>O endereço para seu hub</txtData(2)>
+		<txtData(3)>Separador com um ponto e vírgula (;) (O primeiro será utilizado em “primeira mão” os restantes serão alternativas)</txtData(3)>
+		<txtData(4)>Separador de endereços com ponto e virvula (;)</txtData(4)>
+		<txtData(6)>Mensagem que é enviada quando um utilizador se conecta</txtData(6)>
+		<txtData(7)>Nome do bot (usado para mensagens de comandos)</txtData(7)>
+		<txtData(8)>Nome de bot onde os Ops podem conversar </txtData(8)>
+		<txtData(9)>Versão de cliente mínima para clientes de NMDC</txtData(9)>
+		<txtData(10)>0 = Desactivado / Mínimo share</txtData(10)>
+		<txtData(11)>0 = Desactivado / Valores decimais (ex: 0.5 slots p/hub)</txtData(11)>
+		<txtData(12)>0 = Desactivado</txtData(12)>
+		<txtData(13)>0 = Desactivado</txtData(13)>
+		<txtData(14)>Concede a Slot extra quando O: tag (se presente) é igual ou maior a este valor</txtData(14)>
+		<txtData(15)>Valor mínimo para Slots totais do cliente / 0 = Desactivado</txtData(15)>
+		<txtData(16)>0 = Desactivado / Valores decimais (ex: 4.5 kb/s p/slot)</txtData(16)>
+		<txtData(17)>0 = Desactivado</txtData(17)>
+		<txtData(18)>Indique o prefixo para o qual seus comandos embutidos respondem (único caráter)</txtData(18)>
+		<txtData(19)>Limite de mensagens e comprimento de comandos de protocolo. Tenha cuidado para não fixar muito baixo. O valor por defeito é 2048</txtData(19)>
+		<txtData(20)>O seperator no qual params de comando são seperados por</txtData(20)>
+		<txtData(21)>Password global usada em password mode</txtData(21)>
+		<txtData(22)>0 = Desactivado / Maximo share</txtData(22)>
+		<txtData(23)>Valor de máximo para Slots totais do cliente / 0 = Desactivado</txtData(23)>
+		<txtData(36)>Separador de endereço com ponto e virvula (;)</txtData(36)>
+	</ToolTips>
+	<HubStringDef>
+		<msgMissingStr>Problemas detectados com o arquivo de idioma (Ficheiro.xml). Por favor contacte o autor do PTDCH através de e-mail para carlosferreiracarlos@hotmail.com</msgMissingStr>
+		<msgRedirAll>Redirecione todos os Utilizadores inclusive operadores</msgRedirAll>
+		<msgClearPermIPs>Click &apos;Sim&apos; para confirmar limpar a lista de IP excluídos definitivamente (ban).</msgClearPermIPs>
+		<msgClearTempIPs>Click &apos;Sim&apos; para confirmar limpar a lista de IP excluídos temporáriamente (ban).</msgClearTempIPs>
+		<msgEnterRedirUsersAddress>Indique o endereço para redireccionar os Utilizadores</msgEnterRedirUsersAddress>
+		<msgEnterPM>Indique a mensagem para enviar a todos os Utilizadores</msgEnterPM>
+		<msgEnterOpPM>Indique a mensagem para enviar a todos os operadores</msgEnterOpPM>
+		<msgEnterBanName>Indique o nome para excluir (ban)</msgEnterBanName>
+		<msgEnterBanReason>Indique a razão para a expulsão (ban)&apos; (opcional)</msgEnterBanReason>
+		<msgEnterReplace>Indique o nome para substituir </msgEnterReplace>
+		<msgEnterPermIP>Indique o IP para exclusão permanente (ban).</msgEnterPermIP>
+		<msgEnterRemIP>Indique o IP para remover</msgEnterRemIP>
+		<msgEnterDataToSel>Indique os dados para enviar aos Utilizadores selecionados</msgEnterDataToSel>
+		<msgEnterDataToAll>Indique os dados para enviar a todos os Utilizadores</msgEnterDataToAll>
+		<msgEnterRedirAddress>Indique o endereço para redireccionar</msgEnterRedirAddress>
+		<msgEnterTag>Indique a tag para adicionar</msgEnterTag>
+		<msgEnterTempIP>Indique o IP para excluir temporariamente (ban).</msgEnterTempIP>
+		<msgEnterLength>Indique o tempo da exclusão</msgEnterLength>
+		<msgEnterBanLength>Indique o tempo da exclusão</msgEnterBanLength>
+		<msgEnterRegName>Indique o nome que você quer registar</msgEnterRegName>
+		<msgEnterPass>Indique a password </msgEnterPass>
+		<msgEnterClass>Indique a class</msgEnterClass>
+		<msgEnterNewPass>Indique a nova password</msgEnterNewPass>
+		<msgEnterNewClass>Indique a nova class</msgEnterNewClass>
+		<msgEnterNewName>Indique o novo nome</msgEnterNewName>
+		<msgRenameBan>Renomear Ban</msgRenameBan>
+		<msgConfirmExit>Confirmar Sair</msgConfirmExit>
+		<msgRedirUsers>Redireccionar Utilizadores</msgRedirUsers>
+		<msgBanName>Ban Nome</msgBanName>
+		<msgConfirmClear>Confirmar limpar</msgConfirmClear>
+		<msgBanTempIP>Ban temporariamente IP</msgBanTempIP>
+		<msgRegUser>Registar utilizador</msgRegUser>
+		<msgEditRegged>Editar registo</msgEditRegged>
+		<msgMassMsg>Mass Mensagem</msgMassMsg>
+		<msgMassMsgOp>Op Mass Mensagem</msgMassMsgOp>
+		<msgMassMsgUnReg>UnReg Mass Mensagem</msgMassMsgUnReg>
+		<msgBanPermIP>Ban Permanentemente IP</msgBanPermIP>
+		<msgRemoveIP>Remover IP</msgRemoveIP>
+		<msgSendToSel>Enviar dados (Seleccionados)</msgSendToSel>
+		<msgSendToAll>Enviar dados (Todos)</msgSendToAll>
+		<msgKickSel>Expulsar (Kick) (Seleccionado)</msgKickSel>
+		<msgRedirSel>Redireccionar (Seleccionado)</msgRedirSel>
+		<msgBan>Ban</msgBan>
+		<msgAddTag>Adicionar tag</msgAddTag>
+		<msgRenameUser>Renomear utilizador</msgRenameUser>
+		<msgKick>Kick</msgKick>
+		<msgRedir>Redireccionar</msgRedir>
+		<msgKickReason>Razão para o kick</msgKickReason>
+		<msgRedirReason>Razão para redireccionar</msgRedirReason>
+		<msgBanReason>Razão para ban</msgBanReason>
+		<msgAlreadyAdded> já foi acrescentado à lista.</msgAlreadyAdded>
+		<msgAlreadyRegged> já está registrado.</msgAlreadyRegged>
+		<msgNotRegged> não é registrado.</msgNotRegged>
+		<msgInvalidClass>Invalida class.</msgInvalidClass>
+		<msgInvalidBanName>Não pode excluir nomes com mais de 40 caracteres.</msgInvalidBanName>
+		<msgInvalidBanLength>O tempo de exclusão (ban) deve ser numérico</msgInvalidBanLength>
+		<msgInvalidPass>Passwords não pode ter mais de 20 caracteres.</msgInvalidPass>
+		<msgInvalidRegName>Não registar nomes com mais de 40 caracteres.</msgInvalidRegName>
+		<msgPortInUse>Porta %[port] já está em uso.</msgPortInUse>
+		<msgUpdating>A actualização já está em progresso de download</msgUpdating>
+		<msgUpdate>Download em progresso</msgUpdate>
+		<msgNoUpdate>Não existe actualizações</msgNoUpdate>
+		<msgMostRecent>Você tem a versão mais recente do PTDCH.</msgMostRecent>
+		<msgDownload>Você deseja fazer download?</msgDownload>
+		<msgDetectIP>Detectar IP</msgDetectIP>
+		<msgExitDDCH>Click &apos;Sim&apos; para confirmar sair do PTDCH.</msgExitDDCH>
+		<msgYourIP>Seu IP é %[IP] . Clipboard?</msgYourIP>
+		<msgGettingIP>Já está a determinar seu IP.</msgGettingIP>
+		<msgStartServing>Iniciar o Servidor</msgStartServing>
+		<msgIPError>Ocorreu um erro a tentar determinar o seu IP em www.whatismyip.org. O seu IP determinado localmente é %[ip]. Clipboard seu IP ?</msgIPError>
+		<msgDownloadError>Ocorreu um erro com o download da actualização (%[number]: %[description]).</msgDownloadError>
+		<msgUpdateError>Actualização Error</msgUpdateError>
+		<msgIPNotValide> Endereço de IP não válido.</msgIPNotValide>
+		<msgDays>Dia(s):</msgDays>
+		<msgHours>Hora(s):</msgHours>
+		<msgMinutes>Minuto(s):</msgMinutes>
+		<msgClose>Sair</msgClose>
+		<msgCancel>Cancelar</msgCancel>
+		<msgOK>OK</msgOK>
+		<msgAdd>Adicionar</msgAdd>
+		<msgRemame>Renomear</msgRemame>
+		<msgEdit>Editar</msgEdit>
+		<msgClipboard>Copiar</msgClipboard>
+
+		<msgConvertRegs>Converter base de dados para PTDCH</msgConvertRegs>
+		<msgConvRegsDBType>Selec.. base de dados:</msgConvRegsDBType>
+		<msgConvRegsNoErr>Sem Erros</msgConvRegsNoErr>		
+		<msgConvRegsWithErr>Com Erros</msgConvRegsWithErr>
+		<msgConvRegsCount>Registos Total:</msgConvRegsCount>
+		<msgConvRegsDir>Seleciona directoria do </msgConvRegsDir>
+		<msgConvRegsNoXML>XML não encontrado! </msgConvRegsNoXML>
+		<msgConvRegsBrowse>Navegar</msgConvRegsBrowse>
+		<msgConvRegsConv>Converter</msgConvRegsConv>
+		<msgConvAccountN>Registo Nº</msgConvAccountN>
+		<msgConvName>Nome</msgConvName>
+		<msgConvPassword>Password</msgConvPassword>
+		<msgConvProfile>Perfil</msgConvProfile>		
+		<msgConvErr>Descrição de Erro</msgConvErr>
+
+		<msgCommand>Editar Comando</msgCommand>
+		<msgCmdEnabled>Activar</msgCmdEnabled>
+		<msgCmdTrigger>Comando</msgCmdTrigger>
+		<msgCmdMinClas>Mínimo class</msgCmdMinClas>
+
+		<msgNewScript>Novo Script</msgNewScript>
+		<msgNewScriptName>Indique o nome do script:</msgNewScriptName>
+		<msgNewScriptType>Escolha o tipo de script:</msgNewScriptType>
+		<msgScriptAlready> já está a ser utilizado por outro Script.</msgScriptAlready>
+
+	    <msgRegAdd>Registo adicionado em: </msgRegAdd>
+		<msgRegUpdate>Registo actualizado em: </msgRegUpdate>
+		
+		<msgSCIFind>Localizar</msgSCIFind>
+		<msgSCIReplace>Substituir</msgSCIReplace>
+		<msgSCIGoTo>Ir Para</msgSCIGoTo>
+		<msgSCIFindNext>Localizar Seguinte</msgSCIFindNext>
+		<msgSCIReplace>Substituir</msgSCIReplace>
+		<msgSCIReplaceAll>Substituir Tudo</msgSCIReplaceAll>
+		<msgSCIFindPrev>Localizar Anterior</msgSCIFindPrev>
+		<msgSCIGo>Ir</msgSCIGo>
+		<msgSCIWrap>Palavras Inteiras</msgSCIWrap>
+		<msgSCIWhole>Maiúsculas/minúsculas</msgSCIWhole>
+		<msgSCICase>Caso de partida</msgSCICase>
+		<msgSCIRegExp>Regular expressão</msgSCIRegExp>
+		<msgSCIFindWhat>Localizar por:</msgSCIFindWhat>
+		<msgSCIReplWith>Substituir por:</msgSCIReplWith>
+		<msgSCIDestLine>Linha destino: </msgSCIDestLine>
+		<msgSCICurrLine>Currente linha: </msgSCICurrLine>
+		<msgSCILastLine>Última Linha: </msgSCILastLine>
+		<msgSCIColumn>Coluna: </msgSCIColumn>
+		<msgSCIReplTimes>Substituido %[times] vezes</msgSCIReplTimes>
+	</HubStringDef>
+	<TagsHelp>
+		<0>&apos;NoHello&apos; se não estiver &apos;em declaração de plano $Supports.%[LF]%[LF] Teste para a mínima versão DC++ V:______</0>
+		<1>&apos;Avança DC++ normal O:#.%[LF]%[LF] O:# é usado para "free/open" slots.</1>
+		<2>*isto&apos; é o parametro de slot (S:*) significa slots ilimitadas.%[LF]%[LF] *isto&apos;s significa (L:*) ilimitado limitador de banda.%[LF]%[LF] Faz a reportagem de limite de largura da banda um por base de abertura, não total.</2>
+		<3>----</3>
+		<4>----</4>
+		<5>Utiliza F:#Baixo/#Cima para reportar a largura da banda limitanda.</5>
+		<6>----</6>
+		<7>----</7>
+		<8>slot parametro com formato S:#/#</8>
+		<9>Se você está usando esta opção, então você pode entender isto.</9>
+		<10>Selecione uma Tag por defeito para ver qualquer regra de processo especial.</10>
+		<11>----</11>
+	</TagsHelp>
+</Language>

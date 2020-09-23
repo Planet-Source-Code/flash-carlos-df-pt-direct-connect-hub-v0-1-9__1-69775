@@ -1,0 +1,156 @@
+Mentoring System Info
+
+1) General Overview and Original Purposes
+
+  The mentoring system was originally designed as a hub specific feature for 
+the NMDC script Zeus. However, since it can have many applications and uses 
+beyond its original intent, we decided to include the mentoring feature in 
+PTDC. We hope you'll like it. Here is how it works:
+
+a) From a code perspective (all users)
+  When your hub is running with mentoring enabled, the minimum share size 
+rule is not enforced at login. Instead, it is enforced upon download 
+attempts. In other words, with a minimum share size requirement of 5 Gb, 
+someone could connect to your hub with only 1 Gb shared, chat around, play 
+blackjack or trivia, send PMs, etc. But the minute they attempt to download 
+a file from someone, they will be kicked, and the download command will be 
+filtered (i.e. not forwarded) by the hub, effectively preventing the 
+download.
+
+b) From a code perspective (specific users)
+  With mentoring enabled, users under the minimum share size can connect to 
+the hub and can therefore request to be mentored. The mentoring relationship 
+typically involves a mentored user, and an OP mentoring them. Should an OP 
+accept to mentor a specific user (and the user be registered as such), the 
+mentored user will be able to download freely from other users to build up 
+their share, as if their share was over the minimum requirement.
+  You can however consider a "solo" implementation, where mentored users are 
+simply a class like any other, and are left to fend for themselves.
+
+c) Original intent
+  The mentoring system was designed to be "newbie friendly", and allow 
+newcomers to make their first steps in the DC community with a temporarly 
+limited "start share". Newcomers typically need some guidance and tips to 
+help them get started with the software, and understand the intent behind 
+some of the rules of your hub as well as the more general "netiquette" in 
+the DC community (like staying in the hub while downloading, etc). While 
+anyone can of course answer these questions and explain those aspects of DC, 
+it is generally better to have a single interlocutor and a dedicated 
+relationship. This is why the mentoring system is originally intended as 
+2-person relationship : the mentored user, and the OP mentoring them.
+  While the hub's code will cover the minimum share size aspect, it is 
+important to note that it is only the emerged part of the iceberg, so to 
+speak. A successful implementation of the mentoring system depends heavily 
+on your OPs being ready to dedicate their time and attention to newcomers; 
+the code is only a minor aspect of it.
+
+d) Goodwill concept
+  Goodwill is pretty simple to understand. Mentoring takes care of the 
+minimum share size, because even with the best intentions, some people 
+simply don't have enough content or storage space to bring their share over 
+the minimum requirement of your hub.
+  On the other hand, things like minimum slot requirement, maximum number of 
+simultaneous hubs, etc. are all a matter of goodwill. Anyone can open one 
+extra slot, or connect only to a reasonable number of simultaneous hubs. 
+This is why the mentoring system affects only the minimum share size. Even 
+if you enable mentoring on your hub, people not meeting requirements other 
+than the share size will still be prevented to connect.
+  As an extension of the goodwill concept imbedded in mentoring, the hub 
+will prevent anyone (including mentored users) that tries to connect with 
+exactly 0 bytes shared. This will however not affect OPs, if you have the 
+option "OPs bypass all share and slot rules" checked.
+
+2) Other possible uses of the mentoring system
+
+  The mentoring system can be used as a manual substitute for a rating 
+server. If you are unfamiliar with the ratings server concept, here is a 
+short extract of a post from volkris on the DC++ boards :
+
+« A ratings server will rate the value of a particular client to a group, be 
+that group DC as a whole, a hub, or whatever.
+(...)
+Just to provide a specific example, if I had a copy of a movie that everyone 
+wanted, say it hadn't come out in theaters yet but somehow I had gotten a 
+high quality copy, I should be allowed to enter your movie sharing hub with 
+only that single 700meg movie shared. The users of your hub, under the 
+current system, would lose out because I didn't share 100G, while a ratings 
+system would reveal the popularity of my offer and your hub would let me in. 
+»
+(check on 
+http://dcplusplus.sourceforge.net/forum/viewtopic.php?t=776&start=0 for the 
+complete thread this extract was taken from)
+
+  The mentoring system doesn't automatically rate users under (or over) the 
+minimum share, neither does it assign a priority to users waiting to connect 
+when the hub is full. However it does let them in the hub, and you can 
+manually mentor users with popular offers; which means you can use the 
+mentoring system to achieve similar end results as a ratings server.
+  The bad thing is of course that, unlike a ratings server, it's not 
+automated... but the good thing is that, unlike a ratings server, mentoring 
+exists =)
+
+3) Flaws of the mentoring system
+
+  The mentoring system has a minor flaw : someone who connects with a share 
+size under the minimum requirement might be kicked for their client 
+attempting to download files, even if the user did not actually attempt the 
+download.
+  This is an unfortunate consequence of the way the DC protocol works. If a 
+passive user P attempts to download from an active user A, the client from A 
+generates the same protocol command as if A had attempted to download a file 
+from P. This is because passive downloads work "backwards".
+  To avoid being kicked by mistake, users under the minimum share 
+requirement should switch their client to passive mode (passive users can't 
+download from other passive users, so they will never be kicked by mistake 
+either).
+  It is suggested that, upon login, you serve a short message to users under 
+the minimum share requirement and warn them that they should switch to 
+passive mode while they stay in your hub. Since they won't be able to 
+download from other users no matter what, being in passive or active mode 
+won't affect them. You will probably want to send them a short message upon 
+login anyway, to explain the mentoring system and let them know they were 
+allowed to connect, but aren't allowed to download until their share meets 
+your requirements (or until they get mentored)
+  Note that this flaw does not affect mentored users. Only unmentored users 
+that are under the minimum share size.
+
+4) Implementation suggestions
+
+a) If you want your users to enjoy the mentoring system, it is important 
+that they know it exists. For aesthetic and bandwidth issues, you probably 
+will want to present the mentoring system on a webpage rather than in a 3 
+pages long PM. Simply serve a link to some page on your hub's website 
+presenting the mentoring system. If you need an example or some inspiration, 
+you are welcome to re-use parts of the presentation used by Children of 
+Zeus. You can find it on http://www.freewebs.com/coz/en/mentor.html
+
+b) Mentoring is meant to be a temporary status. The suggested length is 2 
+weeks, renewable if the mentored user was meeting the expectations you had 
+in mind when you enabled mentoring for you hub.
+
+c) Mentoring should be voluntary and optional for the OPs. But it should 
+also be rewarding for them. If you have a page on your hub's website listing 
+the OPs, why not assign them one little badge icon per user they 
+successfully mentored (i.e. who still was regularly in the hub x weeks after 
+their mentored status expired) ? It will also help you figure out how 
+successful mentoring really is on your hub.
+
+d) Do not allow OPs to directly register mentored users, and/or limit the 
+number of simultaneous users they can mentor. One single mentored user is 
+very demanding if they are really new to DC. If you allow your OPs to have a 
+large number of simultaneous mentored users, they might end up overwhelmed 
+should all of them suddenly login at the same time; and the mentoring 
+relation itself might suffer from it. The suggested limit is 5 mentored 
+users maximum per OP. In practice, you will find out that 3 of them is 
+already very straining.
+  Also, depending what you expect from mentored users, you will find out 
+that some leechers for whom you did not renew mentoring might want to trick 
+yours OPs into mentoring them under a different name. As a hub owner, you 
+have more tools in your hands than your OPs to cross-reference and detect 
+such abusers. Preventing your OPs from directly granting mentored status to 
+unchecked users will allow you to quickly review each request and filter out 
+obvious abuses. Again, it depends what you expect from the mentoring system 
+and from mentored users in your own hub, so this last suggestion might not 
+necessarily apply to you.
+
+*Doc by DDCH Team
