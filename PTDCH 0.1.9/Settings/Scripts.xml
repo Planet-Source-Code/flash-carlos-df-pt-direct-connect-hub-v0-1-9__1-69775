@@ -1,0 +1,6 @@
+<Scripts>
+	<Script Name="DebugScript.vbs" Value="False" />
+	<Script Name="Security.vbs" Value="False" />
+	<Script Name="UpTimeControl.vbs" Value="False" />
+	<Script Name="Zatarc-MultiBot0975Arc.vbs" Value="False" />
+</Scripts>

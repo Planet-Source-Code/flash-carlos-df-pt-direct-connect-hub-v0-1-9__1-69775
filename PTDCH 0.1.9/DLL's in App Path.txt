@@ -1,0 +1,4 @@
+libbz2.dll		------> http://www.dynamiclink.nl/htmfiles/rframes/info_dll/info_l/783.htm
+MyIPTools.DLL	------> http://www.a1vbcode.com/app-3445.asp
+SciLexer.dll	------> http://scintilla.sourceforge.net/SciTEDownload.html
+zlib.dll		------> http://www.dll-files.com/dllindex/dll-files.shtml?zlib

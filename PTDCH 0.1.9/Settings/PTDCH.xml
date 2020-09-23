@@ -1,0 +1,215 @@
+<Settings Version="0.1.9">
+	<String>
+		<frmHubPosition>1980,3195</frmHubPosition>
+		<HubName>PTDCH in Debug Mode</HubName>
+		<HubDesc>Hub Test</HubDesc>
+		<HubIP>ptdch.no-ip.org</HubIP>
+		<Ports>1417;417</Ports>
+		<RegisterIP>allhublista.myip.hu;amt.ath.cx;axljab.homelinux.org;b-52.no-ip.org;beach.no-ip.org;dcinfo.sytes.net;dc.wikfall.se;dchublist.myip.hu;dchelp.no-ip.org;dcinfo.dynu.com;dcinfo.sytes.net;dcreg.mine.nu;dreamland.gotdns.org;hub2list.no-ip.info;hubdc.org;hubinfo.myip.hu;hubs-list.com;hublist.awenet.org;hublist.djinncity.net;hublist.zapto.org;hublista.myip.hu;imperialnet.org;listadehubs.no-ip.com;listadinamica.no-ip.org;neo-modus.com;no1hublist.ath.cx;olimpo.no-ip.com;paz.pl;pocmin.sourceforge.net;publiclist.no-ip.com;ranlistreg.sytes.net;reg-residentlist.no-ip.org;setubal.fw.nu;shadownet.sytes.net;shadows.myip.hu;svcd3.mine.nu;thomace.myip.hu;us.hublist.org;vandel405.dynip.com;web16.denver010.server4free.de;wza.digitalbrains.com;zengeday.sytes.net;zpoc.com</RegisterIP>
+		<ForMinShareRedirectAddress>clubedosmamados.no-ip.info</ForMinShareRedirectAddress>
+		<ForMaxShareRedirectAddress>clubedosmamados.no-ip.info</ForMaxShareRedirectAddress>
+		<ForMinSlotsRedirectAddress>clubedosmamados.no-ip.info</ForMinSlotsRedirectAddress>
+		<ForMaxSlotsRedirectAddress>clubedosmamados.no-ip.info</ForMaxSlotsRedirectAddress>
+		<ForMaxHubsRedirectAddress>clubedosmamados.no-ip.info</ForMaxHubsRedirectAddress>
+		<ForNoTagRedirectAddress>clubedosmamados.no-ip.info</ForNoTagRedirectAddress>
+		<ForTooOldDcppRedirectAddress></ForTooOldDcppRedirectAddress>
+		<ForTooOldNMDCRedirectAddress></ForTooOldNMDCRedirectAddress>
+		<ForSlotPerHubRedirectAddress></ForSlotPerHubRedirectAddress>
+		<ForBWPerSlotRedirectAddress>clubedosmamados.no-ip.info</ForBWPerSlotRedirectAddress>
+		<ForFakeShareRedirectAddress>clubedosmamados.no-ip.info</ForFakeShareRedirectAddress>
+		<ForFakeTagRedirectAddress></ForFakeTagRedirectAddress>
+		<ForPasModeRedirectAddress></ForPasModeRedirectAddress>
+		<RedirectAddress>clubedosmamados.no-ip.info</RedirectAddress>
+		<BotName>*PTDCH</BotName>
+		<OpChatName>*OPChat</OpChatName>
+		<JoinMsg>
+
+		                ::  ::::::::   									     :: 
+		                ::::    ::::  ::::::::::::::::::::::::::                                                                        ::::        ::                      ::  
+		              ::::::      ::::::::::::::::::                        ::::::::::              ::::::::::                          ::::      ::::                    ::::::
+		              ::::        ::  ::::::::::::                        ::::::::::::::        ::::::::::::::::                      ::::        ::                      ::::::
+		            ::::::        ::        ::::::                        ::::    ::::::      ::::::::    ::::                        ::::      ::::                    ::::::  
+		            ::::        ::::        ::::                          ::::  ::::::::    ::::::                                  ::::        ::                      ::::::  
+		            ::::        ::          ::::                        ::::      ::::::    ::::                                    ::::      ::::                      ::::    
+		          ::::        ::            ::                          ::::      ::::    ::::::                                  ::::::::    ::::                      ::      
+		          ::::  ::::::            ::::                          ::        ::::    ::::                                    ::::::::::::::                      ::::      
+		        ::::                      ::                          ::::      ::::    ::::::                                    ::        ::::              ::      ::::::::  
+		        ::                        ::                          ::        ::::    ::::                ::                    ::        ::      ::::      ::    ::::::::::::
+		      ::::                      ::                          ::::        ::::    ::::              ::::                    ::      ::::      ::::    ::::    ::::      ::
+		      ::                        ::                          ::::      ::::      ::::::          ::::                    ::        ::::    ::::::::  ::      ::      ::::
+		    ::                          ::                        ::::    ::::::          ::::::    ::::::                      ::        ::      ::::      ::      ::    ::::  
+		    ::                        ::                          ::::::::::::              ::::::::::::                        ::        ::      ::::    ::::    ::::  ::::::  
+		  ::                          ::                          ::::                        ::::::::                        ::        ::::        ::::::  ::::  ::  ::::      
+		  ::                          ::                                                                                      ::          ::                      ::            
+		                                                                                                                      ::        
+	 								      ::    Oficial PT DC Hub Software 
+		................................................................................................................................................................................................
+						PTDCH v0.1.3 Beta 4c available now!
+			         Download Link: http://rapidshare.com/files/67484778/PTDCH_0.1.3_Beta_4c.rar.html
+				       Screen Shot: http://img140.imageshack.us/img140/3486/jpgiv5.gif
+		................................................................................................................................................................................................
+</JoinMsg>
+		<CSeperator> </CSeperator>
+		<HubPassword></HubPassword>
+		<MassMessage>Hello, good night .
+Restart Hub..
+1 minute :)</MassMessage>
+		<OpMassMessage></OpMassMessage>
+		<UnRegMassMessage></UnRegMassMessage>
+		<Interface>English</Interface>
+		<HammeringRd>a.b.c</HammeringRd>
+	<NoIPDNS1></NoIPDNS1>
+	<NoIPDNS2></NoIPDNS2>
+	<NoIPDNS3></NoIPDNS3>
+	<NoIPDNS4></NoIPDNS4>
+	<NoIPUser></NoIPUser>
+	<NoIPPass></NoIPPass>
+	<DynDNS1></DynDNS1>
+	<DynDNS2></DynDNS2>
+	<DynDNS3></DynDNS3>
+	<DynDNS4></DynDNS4>
+	<DynDNSUser></DynDNSUser>
+	<DynDNSPass></DynDNSPass>
+	</String>
+	<Boolean>
+		<DenySocks5>True</DenySocks5>
+		<DenyPassive>False</DenyPassive>
+		<AutoCheckUpdate>False</AutoCheckUpdate>
+		<AutoKickMLDC>True</AutoKickMLDC>
+		<AutoRegister>True</AutoRegister>
+		<AutoRedirect>False</AutoRedirect>
+		<AutoRedirectFull>False</AutoRedirectFull>
+		<AutoRedirectNonReg>False</AutoRedirectNonReg>
+		<AutoRedirectFullNonReg>True</AutoRedirectFullNonReg>
+		<AutoRedirectFullNonOps>False</AutoRedirectFullNonOps>
+		<AutoStart>False</AutoStart>
+		<CompactDBOnExit>True</CompactDBOnExit>
+		<ConfirmExit>True</ConfirmExit>
+		<DCValidateTags>False</DCValidateTags>
+		<DCIncludeOPed>False</DCIncludeOPed>
+		<OPBypass>True</OPBypass>
+		<PreloadWinsocks>True</PreloadWinsocks>
+		<SendMessageAFK>True</SendMessageAFK>
+		<RegOnly>False</RegOnly>
+		<MentoringSystem>True</MentoringSystem>
+		<PreventSearchBots>True</PreventSearchBots>
+		<DescriptiveBanMsg>True</DescriptiveBanMsg>
+		<UseOpChat>True</UseOpChat>
+		<UseBotName>True</UseBotName>
+		<Passive>False</Passive>
+		<DynUpdate>True</DynUpdate>
+		<DynDNSUpdateEna>False</DynDNSUpdateEna>
+		<NoIPUpdateEna>False</NoIPUpdateEna>
+		<NoIPUpdateStartUp>False</NoIPUpdateStartUp>
+		<RedirectFMinShare>False</RedirectFMinShare>
+		<RedirectFMaxShare>False</RedirectFMaxShare>
+		<RedirectFMinSlots>False</RedirectFMinSlots>
+		<RedirectFMaxSlots>False</RedirectFMaxSlots>
+		<RedirectFMaxHubs>False</RedirectFMaxHubs>
+		<RedirectFSlotPerHub>False</RedirectFSlotPerHub>
+		<RedirectFNoTag>False</RedirectFNoTag>
+		<RedirectFTooOldDCpp>False</RedirectFTooOldDCpp>
+		<RedirectFTooOldNMDC>False</RedirectFTooOldNMDC>
+		<RedirectFBWPerSlot>False</RedirectFBWPerSlot>
+		<RedirectFFakeShare>False</RedirectFFakeShare>
+		<RedirectFFakeTag>False</RedirectFFakeTag>
+		<RedirectFPasMode>False</RedirectFPasMode>
+		<FilterCPrefix>True</FilterCPrefix>
+		<EnabledCommands>True</EnabledCommands>
+		<ScriptSafeMode>False</ScriptSafeMode>
+		<StartMinimized>False</StartMinimized>
+		<SendMsgAsPrivate>False</SendMsgAsPrivate>
+		<PasswordMode>False</PasswordMode>
+		<WordWrap>False</WordWrap>
+		<DenyNoTag>False</DenyNoTag>
+		<HideFadeImg>False</HideFadeImg>
+		<CheckFakeShare>True</CheckFakeShare>
+		<PreventGuessPass>True</PreventGuessPass>
+		<EnableFloodWall>True</EnableFloodWall>
+		<RedirectFGP>False</RedirectFGP>
+		<OpsCanRedirect>False</OpsCanRedirect>
+		<ChatOnly>False</ChatOnly>
+		<VIPUseOpChat>False</VIPUseOpChat>
+		<MinClsSearchSend>False</MinClsSearchSend>
+		<MinClsConnectSend>True</MinClsConnectSend>
+		<MinimizeTray>True</MinimizeTray>
+		<HideMyinfos>False</HideMyinfos>
+		<ACOClients>True</ACOClients>
+		<EnabledScheduler>False</EnabledScheduler>
+		<PriorityBl>False</PriorityBl>
+		<PopUpNewReg>True</PopUpNewReg>
+		<PopUpOpConected>True</PopUpOpConected>
+		<PopUpOpDisconected>True</PopUpOpDisconected>
+		<PopUpUserKick>True</PopUpUserKick>
+		<PopUpUserBaned>True</PopUpUserBaned>
+		<PopUpUserRedirected>True</PopUpUserRedirected>
+		<PopUpStartedServing>True</PopUpStartedServing>
+		<PopUpUserBaned>True</PopUpUserBaned>
+		<PopUpUserRedirected>True</PopUpUserRedirected>
+		<PopUpStopedServing>True</PopUpStopedServing>
+		<MoveForm>True</MoveForm>
+		<MagneticWin>True</MagneticWin>
+		<StartWin>False</StartWin>
+		<blSkin>True</blSkin>
+		<RndSkin>False</RndSkin>
+		<Plugins>True</Plugins>
+	</Boolean>
+	<Byte>
+		<DCMaxHubs>0</DCMaxHubs>
+		<DCOSlots>0</DCOSlots>
+		<MinSlots>0</MinSlots>
+		<MaxSlots>0</MaxSlots>
+		<MinShareSize>3</MinShareSize>
+		<MaxShareSize>3</MaxShareSize>
+		<CPrefix>43</CPrefix>
+		<DCOSpeed>0</DCOSpeed>
+		<SendJoinMsg>2</SendJoinMsg>
+		<MaxPassAttempts>3</MaxPassAttempts>
+		<FWMyINFO>5</FWMyINFO>
+		<FWGetNickList>5</FWGetNickList>
+		<FWActiveSearch>15</FWActiveSearch>
+		<FWPassiveSearch>3</FWPassiveSearch>
+		<MinMyinfoFakeCls>2</MinMyinfoFakeCls>
+		<FWMainchat>20</FWMainchat>
+	</Byte>
+	<Integer>
+		<MinPassiveSearchLen>0</MinPassiveSearchLen>
+		<FWInterval>10000</FWInterval>
+		<FWBanLength>10</FWBanLength>
+		<MinConnectCls>0</MinConnectCls>
+		<MinSearchCls>0</MinSearchCls>
+		<ZLINELENGHT>1400</ZLINELENGHT>
+		<PriorityVal>1</PriorityVal>
+	</Integer>
+	<Long>
+		<MaxUsers>400</MaxUsers>
+		<DefaultBanTime>10</DefaultBanTime>
+		<ScriptTimeout>15000</ScriptTimeout>
+		<MaxMessageLen>0</MaxMessageLen>
+		<DataFragmentLen>2048</DataFragmentLen>
+		<ConDropInterval>250</ConDropInterval>
+		<FWDropMsgInterval>300</FWDropMsgInterval>
+		<lngSkin>7</lngSkin>
+	</Long>
+	<Double>
+		<IMinShare>0</IMinShare>
+		<IMaxShare>0</IMaxShare>
+		<DCSlotsPerHub>0</DCSlotsPerHub>
+		<DCBandPerSlot>10</DCBandPerSlot>
+		<DCMinVersion>0,181</DCMinVersion>
+		<NMDCMinVersion>0</NMDCMinVersion>
+	</Double>
+	<Tags>
+		<Tag Name="++" />
+		<Tag Name="DC" />
+		<Tag Name="DCGUI" />
+		<Tag Name="oDC" />
+		<Tag Name="QuickDC" />
+		<Tag Name="DC:Pro" />
+		<Tag Name="SDC" />
+		<Tag Name="StrgDC++" />
+		<Tag Name="SdDC++" />
+		<Tag Name="Z++" />
+		<Tag Name="Chat" />
+	</Tags>
+</Settings>

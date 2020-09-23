@@ -1,0 +1,109 @@
+Sistema Info De Mentoring 
+
+1) Visualização geral e finalidades originais 
+O sistema mentoring foi projetado originalmente como uma característica específica do hub para o script NMDC Zeus.
+Entretanto, como pode ter muitas aplicações e usos além de sua intenção original, nós decidimo-nos incluir a característica "mentoring" no SDCH.
+Esperemos que goste.
+
+É assim que funciona:
+
+a) De uma prespectiva do código (todos os usuários) 
+Quando o seu hub funcionar com o "mentoring" activado, a regra de partilha mínima não é forçada no início da sessão.
+Ao invés disso, é forçada nas tentativas de download. Ou seja com um requesito de partilha mínima de 5 Gb, alguém poderia conectar-se ao seu hub
+com o sómente 1 Gb de partilha, participar no chat, jogar  blackjack ou trivia, enviar MPs, etc..Mas assim que tentam fazer o download de um ficheiro
+de alguém, serão kickados, e o comando do download será  filtrado (isto é não enviado) pelo hub, impedindo eficazmente o download.
+
+b) De uma prespectiva do código (usuários específicos) 
+Com o "mentoring" activado, os usuários com partilhas mínimas inferiores  podem conectar-se  ao hub e podem consequêntemente pedir para serem "mentored".
+O "relacionamento mentoring" envolve tipicamente um usuário "mentored" , e um OP "mentoring" os usuários.
+Se um OP aceitar ser "mentor" de um usuário específico (e o usuário ser registado como tal), o usuário "mentored" poderá fazer downloads livremente
+de outros usuários para aumentar a sua partilha, como se a sua partilha estivesse acima da exigência mínima.
+Você pode entretanto considerar uma implementação a "solo", onde os usuários "mentored"  são simplesmente uma classe como outra qualquer, e são deixados defenderem-se por eles próprios.
+
+c) Intenção original 
+O sistema "mentoring" foi projetado para ser "newbie amigável", e permite aos recem-chegados para darem o seu primeiro passo
+na comunidade DC com a "partilha de inicio" temporarioamente limitada.
+Os recem-chegados necessitam normalmente algumas orientações e dicas para ajuda-los a começar com o software, e compreender a intenção
+atrás de algumas das regras do seu hub , bem como a "netiquette" mais genérica dentro da comunidade DC 
+(como permanecer no hub enquanto faz downloads, etc.).Como qualquer um pode naturalmente responder a estas perguntas e explicar estes 
+aspectos do DC,  é geralmente melhor ter um único interlocutor e um relacionamento dedicado.
+Isto é porque o sistema "mentoring" é pretendido originalmente como um relacionamento entre 2 pessoas : o usuário "mentored", e o OP "mentoring" o usuário.
+Como o código do hub cobrirá o aspecto da partilha mínima , é  importante anotar que é somente a parte emersa do iceberg, como forma de falar.
+Uma implementação bem sucedida do sistema "mentoring" depende muito dos seus OPs estárem prontos para dedicar o seu tempo e atenção
+aos recem-chegados; o código é somente um aspecto menor.
+
+d) Conceito "goodwill" 
+O "goodwill" é consideravelmente simples de compreender.O "mentoring" toma conta da partilha mínima, porque mesmo com as melhores intenções,
+alguns usuários podem simplesmente não ter bastante espaço de armazenamento para colocar a sua partilha superior ao requesito mínimo do hub.
+Por outro lado, as coisas como a exigência mínima das slots,o número máximo de os hub em simultâneo, etc. são tudo formas de "goodwill".
+Qualquer um pode abrir uma slot extra, ou conectar-se somente a um número razoável de hubs em simultâneo.
+É por isso que o sistema "mentoring" afeta somente o tamanho mínimo da partilha. Mesmo activando o "mentoring" no seu hub,
+usuários que não preencherem todos os requesitos à excepção da partilha serão impedidos de se conectar.
+Como uma extensão do conceito do "goodwill" embebido no "mentoring", o hub impedirá qualquer um (incluindo usuários "mentored")
+que tentem conectar-se com exatamente 0 bytes partilhados.Isto não irá afetar os OPs, se você tiver a opção "OPs bypass all share and slot rules" seleccionada.
+
+2) Outros possíveis usos do sistema "mentoring" 
+O sistema "mentoring" pode ser usado como um substituto manual para o "rating" do server.Se você desconhecer o conceito "ratings server", fica aqui um  extrato de um post do volkris no DC++ boards:
+
+« Um "rating server" avaliará o valor de um especifico cliente a um grupo, seja  
+esse grupo o DC como um todo, um hub, ou o que quer que seja.
+(…) 
+Para fornecer apenas um exemplo específico, se eu tiver uma cópia de um filme que todos  
+querem, digamos que não saído nos cinemas contudo e eu tinha conseguido de algum modo uma  
+cópia de qualidade elevada, eu deveria de ser permitido no teu hub de partilha de filmes
+somente com esse único filme de 700meg partilhado.Os usuários de seu hub, sob  
+o sistema atual, ficaria a perder porque eu não partilhei 100G, enquanto que o sistema de "rating"
+revelaria a popularidade de minha oferta e seu hub deixar-me-ia entrar. 
+" 
+(veja em  
+http://dcplusplus.sourceforge.net/forum/viewtopic.php?t=776&start=0 para a 
+thread completa deste extrato de onde foi retirado) 
+
+O sistema "mentoring" não avalia automaticamente usuários com partilhas inferiores (ou superiores) à mínima, nem atribui uma prioridade aos
+usuários que esperam para se conectar quando o hub estiver cheio. No entanto deixa-os entrar no hub, e você pode manualmente ser mentor
+dos usuários com ofertas populares;o que implica que  você pode usar sistema "mentoring" para conseguir resultados similares como um "ratings server".
+A coisa má é que naturalmente , ao contrário de "ratings server", não é automatizada…mas a coisa boa é que, ao contrário de um "ratings server", "mentoring"
+existe =) 
+
+3) Falhas do sistema "mentoring" 
+O sistema mentoring tem uma pequena falha :alguém que se conectar com uma partilha inferior à exigência mínima pode ser kickado pois o seu cliente
+tentou fazer o download de ficheiros, mesmo que o usuário não tente realmente o download.
+Esta é uma conseqüência infeliz da maneira que o protocolo DC funciona. Se um usuário passivo P tentar fazer o download de um usuário activo A,
+o cliente do A gera o mesmo comando do protocolo como se A tivesse tentado fazer o download de um ficheiro do usuário P.
+Isto é porque os downloads passivos funcionam "para trás".
+Para evitar ser kickado por erro, os usuários com partilhas inferiores à exigência mínima deve mudar o seu cliente para o modo passivo
+(os usuários passivos não podem fazer downloads de outros usuários passivos, assim nunca serão kickados por erro).
+Sugere-se que, no início de uma sessão, você envie a uma mensagem curta aos usuários com partilhas inferiores à exigência mínima e avise-os
+que devem mudar para a modalidade passiva enquanto permanecerem no seu hub.
+Como não poderão fazer downloads de outros usuários não importa o quê, estando na modalidade passiva ou activa não os afectará.
+Você deverá provavelmente enviar-lhes uma mensagem curta  no início de uma sessão , para explicar o sistema "mentoring" e deixa-los saber
+que foram permitidos de se conectar mas para não para fazer downloads até que a sua partilha seja cumpra os requesitos mínimos (ou até serem "mentored") 
+Notar que esta falha não afeta os usuários "mentored". Somente os usuários "unmentored" que têm partilhas inferiores ao minímo permitido.
+
+4) Sugestões de implementação 
+
+a) Se você quiser que os seus usuários usem o sistema "mentoring", é importante que saibam que existe.
+Para assuntos de estética e a largura de banda, você provavelmente deverá apresentar o sistema "mentoring" numa página na web
+ao invés de uma MP de 3  páginas de comprimento. Indica-lhes apenas o link para  alguma página no website do seu hub apresentando o sistema "mentoring".
+Se você precisar de um exemplo ou alguma inspiração, você é bem-vindo a usar partes da apresentação usada pelo "Children of Zeus".
+Você pode encontrá-lo em http://www.freewebs.com/coz/en/mentor.html 
+
+b) Mentoring deve ser um status temporário. O tempo sugerido é de 2 semanas, renovável se o usuário "mentored" cumnprir as expectativas
+que você teve tinha em mente quando você activou o "mentoring" no seu hub.
+
+c) Mentoring deve ser voluntário e opcional para o OPs.Mas deve ser  
+também compensador para eles.Se você tiver uma página no website do seu hub listando os OPs, porque não lhes atribuir um pequeno "ícone emblema"
+por cada  usuário que eles "mentored" com sucesso (isto é quem estava regularmente no hub x semanas depois do status "mentored" ter expirado?
+Ajudar-lhe-á também a perceber se o sistema "mentoring" é bem sucedido no seu hub.
+
+d) Não deve permitir que os OPs registem diretamente usuários "mentored", e/ou limitar o número de usuários em simultâneos que eles podem fazer "mentor".
+Um único usuário "mentored" é exigir muito se forem realmente novos no DC.Se você permitir que o seus OPs tenham um número grande de usuários
+em simultâneo "mentored" , eles pôde acabar oprimido se todos iniciarem de repente  uma sessão ao mesmo tempo; e a relação "mentoring" pode sofrer disso.
+O limite sugerido é 5 usuários "mentored"no máximo por OP. Na prática, você verificará que 3 deles já é muito dificil.
+Também, dependendo do que você esperar dos usuários "mentored", você verificará que alguns leechers que você não renovou o "mentoring"
+podem querer enganar os seus OPs para serem "mentoring" sob um nome diferente. Como fundador do hub, você tem mais ferramentas nas suas mãos
+do que os seus OPs para cruzar dados  e detectar tais abusadores. Impedindo que os seus OPs concedam diretamente o status "mentored"
+aos "usuários unchecked" irá permitir-lhe visualizar cada pedido e filtre os abusos óbvios.
+Uma vez mais, depende daquilo que você espera do sistema "mentoring" e dos usuários "mentored" no seu hub, 
+para que esta última sugestão não se aplique a si necessariamente.
+
